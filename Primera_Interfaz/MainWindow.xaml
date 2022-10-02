@@ -1,0 +1,55 @@
+﻿<Window x:Class="Primera_Interfaz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Primera_Interfaz"
+        mc:Ignorable="d"
+        Title="Calculadora" Height="400" Width="300">
+    <Grid Name="Elsize">
+        <Grid.Background>
+            <SolidColorBrush Color="#FF171313" Opacity="1"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.ColumnSpan="4" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="36" Margin="5" Foreground="#FFDCDBDF" Name="Pantalla">0</TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" Foreground="#FFDCDBDF" Name="ValoresTemp"></TextBlock>
+        
+        <Button Name="BotonMultiplica" BorderBrush="Transparent" Background="#FFE02225" Grid.Row="1" Grid.Column="0" Margin="5" FontSize="24">*</Button>
+        <Button Name="BotonBorraUno" BorderBrush="Transparent" Background="#FFE02225" Grid.Row="1" Grid.Column="1" Margin="5" FontSize="24">CE</Button>
+        <Button Name="BotonBorraTodo" BorderBrush="Transparent" Background="#FFE02225" Grid.Row="1" Grid.Column="2" Margin="5" FontSize="24">C</Button>
+        <Button Name="BotonBorraDigito" BorderBrush="Transparent" Background="#FFE02225" Grid.Row="1" Grid.Column="3" Margin="5" FontSize="24">Del</Button>
+
+        <Button Click="Boton7_Click" Name="Boton7" BorderBrush="Transparent" Background="#FFC70B29" Grid.Row="2" Grid.Column="0" Margin="5" FontSize="24" Foreground="#FFDCDBDF">7</Button>
+        <Button Click="Boton8_Click" Name="Boton8" BorderBrush="Transparent" Background="#FFC70B29" Grid.Row="2" Grid.Column="1" Margin="5" FontSize="24" Foreground="#FFDCDBDF">8</Button>
+        <Button Click="Boton9_Click" Name="Boton9" BorderBrush="Transparent" Background="#FFC70B29" Grid.Row="2" Grid.Column="2" Margin="5" FontSize="24" Foreground="#FFDCDBDF">9</Button>
+        <Button Click="BotonSuma_Click" Name="BotonSuma" BorderBrush="Transparent" Background="#FFE02225" Grid.Row="2" Grid.Column="3" Margin="5" FontSize="24">+</Button>
+
+        <Button Click="Boton4_Click" Name="Boton4" BorderBrush="Transparent" Background="#FFC70B29" Grid.Row="3" Grid.Column="0" Margin="5" FontSize="24" Foreground="#FFDCDBDF">4</Button>
+        <Button Click="Boton5_Click" Name="Boton5" BorderBrush="Transparent" Background="#FFC70B29" Grid.Row="3" Grid.Column="1" Margin="5" FontSize="24" Foreground="#FFDCDBDF">5</Button>
+        <Button Click="Boton6_Click" Name="Boton6" BorderBrush="Transparent" Background="#FFC70B29" Grid.Row="3" Grid.Column="2" Margin="5" FontSize="24" Foreground="#FFDCDBDF">6</Button>
+        <Button Click="BotonResta_Click" Name="BotonResta" BorderBrush="Transparent" Background="#FFE02225" Grid.Row="3" Grid.Column="3" Margin="5" FontSize="24">-</Button>
+
+        <Button Click="Boton1_Click" Name="Boton1" BorderBrush="Transparent" Background="#FFC70B29" Grid.Row="4" Grid.Column="0" Margin="5" FontSize="24" Foreground="#FFDCDBDF">1</Button>
+        <Button Click="Boton2_Click" Name="Boton2" BorderBrush="Transparent" Background="#FFC70B29" Grid.Row="4" Grid.Column="1" Margin="5" FontSize="24" Foreground="#FFDCDBDF">2</Button>
+        <Button Click="Boton3_Click" Name="Boton3" BorderBrush="Transparent" Background="#FFC70B29" Grid.Row="4" Grid.Column="2" Margin="5" FontSize="24" Foreground="#FFDCDBDF">3</Button>
+        <Button Click="BotonDivide_Click" Name="BotonDivide" BorderBrush="Transparent" Background="#FFE02225" Grid.Row="4" Grid.Column="3" Margin="5" FontSize="24">/</Button>
+
+        <Button Click="Boton0_Click" Name="BotonCero" BorderBrush="Transparent" Background="#FFC70B29" Grid.Row="5" Grid.Column="0" Margin="5" FontSize="24" Foreground="#FFDCDBDF">0</Button>
+        <Button Click="BotonResultado_Click" Name="BotonResultado" BorderBrush="Transparent" Background="#FFE02225" HorizontalAlignment="Right" Width="200" Grid.Row="5" Grid.ColumnSpan="4" FontSize="24" Margin="5">=</Button>
+    </Grid>
+</Window>
